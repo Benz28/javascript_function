@@ -1,7 +1,12 @@
 const github_fun = () => { console.log('test'); }
 
-window.onload = () => {
-  console.log('First Load');
+async function GenerateInStatement(data) {
+  let inStatement = '';
+  
+  data.forEach((item) => {
+      inStatement += `, '${item}' `;
+  })
+  
+  inStatement = `( ${inStatement.replace(",", "")} )`;
+  return await inStatement;
 }
-
-console.log('maybe this is onload testing!');
