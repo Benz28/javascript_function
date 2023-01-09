@@ -1,1 +1,1 @@
-const = () => { console.log('test'); }
+const github_fun = () => { console.log('test'); }
