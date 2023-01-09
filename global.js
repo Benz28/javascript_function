@@ -1,6 +1,6 @@
 const github_fun = () => { console.log('test'); }
 
-async function GenerateInStatement(data) {
+const GenerateInStatement = async (data) => {
   let inStatement = '';
   
   data.forEach((item) => {
