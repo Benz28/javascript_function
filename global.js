@@ -1,6 +1,6 @@
 const github_fun = () => { console.log('test'); }
 
-const GenerateInStatement = async (data) => {
+const GenerateInStatement = (data) => {
   let inStatement = '';
   
   data.forEach((item) => {
@@ -8,5 +8,5 @@ const GenerateInStatement = async (data) => {
   })
   
   inStatement = `( ${inStatement.replace(",", "")} )`;
-  return await inStatement;
+  return inStatement;
 }
